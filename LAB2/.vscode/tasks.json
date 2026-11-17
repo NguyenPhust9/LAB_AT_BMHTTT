@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "LAB2: Build va test Java",
+            "type": "process",
+            "command": "${workspaceFolder}/mvnw.cmd",
+            "args": ["-f", "${workspaceFolder}/demo/pom.xml", "verify"],
+            "group": {"kind": "build", "isDefault": true},
+            "problemMatcher": []
+        },
+        {
+            "label": "LAB2: Chay Java Swing",
+            "type": "process",
+            "command": "${workspaceFolder}/mvnw.cmd",
+            "args": ["-f", "${workspaceFolder}/demo/pom.xml", "compile", "exec:java"],
+            "problemMatcher": []
+        },
+        {
+            "label": "LAB2: Python self-test",
+            "type": "process",
+            "command": "python",
+            "args": ["${workspaceFolder}/demo/python/aes_cbc_gui.py", "--self-test"],
+            "problemMatcher": []
+        }
+    ]
+}

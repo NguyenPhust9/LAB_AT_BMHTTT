@@ -1,0 +1,6 @@
+.tools/
+tmp/
+**/target/
+**/__pycache__/
+**/.venv/
+*.log

@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "LAB2 - Menu Java Swing",
+            "request": "launch",
+            "mainClass": "week_02.frm_Menu",
+            "cwd": "${workspaceFolder}/demo",
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "debugpy",
+            "name": "LAB2 - Python AES-CBC",
+            "request": "launch",
+            "program": "${workspaceFolder}/demo/python/aes_cbc_gui.py",
+            "console": "integratedTerminal"
+        }
+    ]
+}
